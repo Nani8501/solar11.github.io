@@ -34,6 +34,3 @@ The Inner Solar System Web Page is deployed and accessible online. You can acces
 
 This web page was created by [Jagadeesh Kokkula](https://www.linkedin.com/in/jagadeeshkokkula/).
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
