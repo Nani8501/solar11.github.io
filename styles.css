@@ -1,0 +1,214 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+div {
+  width: 100%;
+  height: 100%;
+}
+body {
+
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('space1.png');
+  overflow: scroll;
+
+}
+.container {
+  margin: 50px;
+  font-size: 50px;
+  width: 2000px;
+  height: 2000px;
+  position: relative;
+}
+.sun {
+  position: absolute;
+  top: 1300px;
+  left: 1300px;
+  width: 200px;
+  height: 200px;
+}
+.sunb {
+  background-image: url("Sun.png");
+  top: 0px;
+  position: absolute;
+  left: 0px;
+  width: 150px;
+  height: 150px;
+  background-size: 100% 100%;
+  filter: drop-shadow(0 0 50px yellow);
+  animation: orbit 26.6s linear infinite;
+}
+
+.venus,
+.mercury,
+.earth,
+.emoon,
+.mars {
+  position: absolute;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+  border-width: 0.5px 0.5px 0 0;
+  border-radius: 50%;
+}
+.mercury {
+  top: 1095px;
+  left: 1095px;
+  width: 580px;
+  height: 580px;
+  animation: orbit 8.8s linear infinite;
+  z-index: 4;
+}
+.venus {
+  top: 860px;
+  left: 860px;
+  width: 1080px;
+  height: 1080px;
+  animation: orbit 819791.666663s linear infinite;
+  z-index: 3;
+}
+.earth {
+  top: 640px;
+  left: 640px;
+  width: 1500px;
+  height: 1500px;
+  animation: orbit 36.5s linear infinite;
+  z-index: 2;
+}
+.emoon {
+  top: 200px;
+  right: 200px;
+  width: 40px;
+  height: 40px;
+  animation: orbit 3s linear infinite;
+  z-index: 1;
+}
+
+.mars {
+  top: 255px;
+  right: -1450px;
+  width: 2280px;
+  height: 2280px;
+  animation: orbit 68.7s linear infinite;
+  z-index: 1;
+}
+
+.venus::before,
+.mercury::before,
+.earth::before,
+.emoon::before,
+.mars::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.mercuryb {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  background-image: url(Mercury.png);
+  background-repeat: no-repeat;
+  animation: orbit 5.9s linear infinite;
+  background-size: 100% 100%;
+}
+
+.mercuryb:hover {
+  top: 110px;
+  right: -130px;
+  transform: scale(1.5);
+}
+.mercury::before {
+  top: 85px;
+  right: 85px;
+  width: 0.2439px;
+  height: 0.2439px;
+  background-color: darkgray;
+}
+.venusb {
+  position: absolute;
+  top: 147px;
+  right: 150px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url(venus.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: orbit 24.3s linear infinite;
+}
+.venusb:hover {
+  transform: scale(1.5);
+}
+.venus::before {
+  top: 155px;
+  right: 155px;
+  width: 6.0518px;
+  height: 6.0518px;
+  background-color: red;
+}
+.earthb {
+  position: absolute;
+  top: 210px;
+  right: 209px;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  z-index: 5;
+  background-image: url(earth.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: orbit 1s linear infinite;
+}
+.earthb:hover {
+  position: absolute;
+  background-color: transparent;
+  background-image: url(earth.png);
+  background-repeat: no-repeat;
+  transform: scale(1.5);
+}
+.earth::before {
+  top: 219px;
+  right: 219px;
+  width: 0.637px;
+  height: 0.637px;
+  background-color: aqua;
+}
+.emoon::before {
+  top: 3px;
+  right: 3px;
+  width: 0.17374px;
+  height: 0.17374px;
+  background-color: silver;
+}
+.marsb {
+  position: absolute;
+  top: 300px;
+  right: 310px;
+  width: 50px;
+  height: 50px;
+  background-image: url(mars.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: orbit 1.025s linear infinite;
+}
+.marsb:hover {
+  transform: scale(1.5);
+}
+.mars::before {
+  top: 3px;
+  right: 3px;
+  width: 0.2439px;
+  height: 0.24394px;
+  background-color: orangered;
+}
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
