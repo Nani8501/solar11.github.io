@@ -32,7 +32,7 @@ The Inner Solar System Web Page is deployed and accessible online. You can acces
 
 ## About the Author
 
-This web page was created by [Jagadeesh Kokkula].
+This web page was created by [Jagadeesh Kokkula](https://www.linkedin.com/in/jagadeeshkokkula/).
 
 ## License
 
