@@ -3,33 +3,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=75%, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inner Solar System</title>
     <style>
       html,
 body {
-  width: 2000px;
-  height: 2000px;;
+  width: 10000px;
+  height: 4000px;;
 }
-div {
-  width: 100%;
-  height: 100%;
-}
-body {
 
+body {
+  position: absolute;
+  left: -1500px;
+  width: 12000px;
+  height: 12000px;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('space1.jpeg');
+  background-repeat: no-repeat;
+  background-size: 119% 293%;
+  background-image: radial-gradient(rgb(40, 31, 1) 1%,rgb(22, 24, 52) 3%, rgb(12, 0, 40) 25%, rgb(1, 1, 24) 70%);
   overflow: scroll;
 
 }
 .container {
   margin: 150px;
   font-size: 50px;
-  width: 2500px;
-  height: 2500px;
+  width: 12000px;
+  left: -500px;
+  top:-200px;
+  height: 12000px;
   position: absolute;
 }
 .sun {
@@ -40,7 +44,7 @@ body {
   height: 200px;
 }
 .sunb {
-  background-image: url("SUN.png");
+  background-image: url("Sun.png");
   top: 0px;
   position: absolute;
   left: 0px;
@@ -50,16 +54,39 @@ body {
   filter: drop-shadow(0 0 50px yellow);
   animation: orbit 26.6s linear infinite;
 }
-
+.innersolar{
+  position: absolute;
+  top: 4550px;
+  left: 6406px;
+  width: 1980px;
+  height: 1980px;
+}
 .venus,
 .mercury,
 .earth,
 .emoon,
-.mars {
+.mars ,
+.jupiter,
+.saturn,
+.uranus,
+.neptune{
   position: absolute;
   border-style: solid;
   border-color: white transparent transparent transparent;
   border-width: 0.5px 0.5px 0 0;
+  border-radius: 50%;
+}
+.saturnrings1,
+.saturnrings2,
+.saturnrings3,
+.saturnrings4,
+.saturnrings5,
+.saturnrings6,
+.saturnrings7{
+  position: absolute;
+  border-style: solid;
+  border-color: rgb(103, 83, 83);
+  border-width: 10.9px;
   border-radius: 50%;
 }
 .mercury {
@@ -68,7 +95,7 @@ body {
   width: 580px;
   height: 580px;
   animation: orbit 8.8s linear infinite;
-  z-index: 4;
+  z-index: 8;
 }
 .venus {
   top: 860px;
@@ -76,7 +103,7 @@ body {
   width: 1080px;
   height: 1080px;
   animation: orbit 819791.666663s linear infinite;
-  z-index: 3;
+  z-index: 7;
 }
 .earth {
   top: 640px;
@@ -84,7 +111,7 @@ body {
   width: 1500px;
   height: 1500px;
   animation: orbit 36.5s linear infinite;
-  z-index: 2;
+  z-index: 6;
 }
 .emoon {
   top: 200px;
@@ -92,7 +119,7 @@ body {
   width: 40px;
   height: 40px;
   animation: orbit 3s linear infinite;
-  z-index: 1;
+  z-index: 5;
 }
 
 .mars {
@@ -101,14 +128,118 @@ body {
   width: 1980px;
   height: 1980px;
   animation: orbit 68.7s linear infinite;
-  z-index: 1;
+  z-index: 5;
 }
+.jupiter{
+  top: 4150px;
+  left: 5920px;
+  width: 3616px;
+  height: 3616px;
+  animation: orbit 433.3s linear infinite;
+  z-index: 4;
 
+}
+.saturn{
+  top: 3149px;
+  left: 4990px;
+  width: 5518px;
+  height: 5518px;
+  animation: orbit 1075.9s linear infinite;
+  position: absolute;
+  z-index:3;
+
+}
+.saturnrings1 {
+  top: 700px;
+  right: 700px;
+  width: 200px;
+  height: 200px;
+  animation: orbit 0.5s linear infinite;
+  position: absolute;
+  z-index: 3;
+}
+.saturnrings2 {
+  top: 724px;
+  right: 728px;
+  width: 130px;
+  height: 130px;
+  animation: orbit 0.6s linear infinite;
+  position: absolute;
+  z-index: 3;
+}
+.saturnrings3 {
+  top: 735px;
+  right: 730px;
+  width: 140px;
+  height: 140px;
+  animation: orbit 0.7s linear infinite;
+  position: absolute;
+  z-index: 3;
+}
+.saturnrings4 {
+  top: 720px;
+  right: 710px;
+  width: 170px;
+  height: 170px;
+  animation: orbit 0.9s linear infinite;
+  position: absolute;
+  z-index: 3;
+}
+.saturnrings5 {
+  top: 740px;
+  right: 735px;
+  width: 120px;
+  height: 120px;
+  animation: orbit 0.5s linear infinite;
+  position: absolute;
+  z-index: 3;
+}
+.saturnrings6 {
+  top: 710px;
+  position: absolute;
+  right: 710px;
+  width: 180px;
+  height: 180px;
+  animation: orbit 0.2s linear infinite;
+  z-index: 3;
+}
+.saturnrings7 {
+  top: 720px;
+  right: 720px;
+  width: 160px;
+  height: 160px;
+  animation: orbit 0.4s linear infinite;
+  position: absolute;
+  z-index: 3;
+}
+.uranus{
+  top: 1690px;
+  left: 3490px;
+  width: 8518px;
+  height: 8518px;
+  animation: orbit 3068.7s linear infinite;
+  z-index: 2;
+
+}
+.neptune{
+  top: 110px;
+  left: 2000px;
+  width: 11518px;
+  height: 11528px;
+  animation: orbit 6019.0s linear infinite;
+  z-index: 1;
+
+
+}
 .venus::before,
 .mercury::before,
 .earth::before,
 .emoon::before,
-.mars::before {
+.mars::before,
+.jupiter::before,
+.saturn::before,
+.uranus::before,
+.neptune::before{
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -215,6 +346,63 @@ body {
   height: 0.24394px;
   background-color: orangered;
 }
+
+.jupiterb {
+  position: absolute;
+  top: 491px;
+  right: 474px;
+  width: 110px;
+  height: 110px;
+  background-image: url('jupiter.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: orbit 0.41375s linear infinite;
+}
+.jupiterb:hover {
+  transform: scale(1.5);
+}
+.saturnb {
+  position: absolute;
+  top: 758px;
+  right: 757px;
+  width: 90px;
+  height: 90px;
+  background-image: url('saturn.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: orbit 0.4458333s linear infinite;
+}
+.saturnb:hover {
+  transform: scale(1.5);
+}
+.uranusb {
+  position: absolute;
+  top: 1200px;
+  right: 1200px;
+  width: 85px;
+  height: 85px;
+  background-image: url('uranus.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: orbit 0.725s linear infinite;
+}
+.uranusb:hover {
+  transform: scale(1.5);
+}
+.neptuneb {
+  position: absolute;
+  top: 1650px;
+  right: 1650px;
+  width: 70px;
+  height: 70px;
+  background-image: url('neptune.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: orbit 0.666s linear infinite;
+}
+.neptuneb:hover {
+  transform: scale(1.5);
+}
 @keyframes orbit {
   to {
     transform: rotate(360deg);
@@ -225,6 +413,7 @@ body {
   </head>
   <body>
     <div class="container">
+      <div class="innersolar">
       <a href="https://solarsystem.nasa.gov/planets/sun/overview/"
         ><div class="sun">
           <div class="sunb"></div></div
@@ -249,6 +438,27 @@ body {
         <a href="https://solarsystem.nasa.gov/planets/mars/overview/"
           ><div class="marsb"></div
         ></a>
+      </div>
+    </div>
+      <div class="jupiter">
+        <div class="jupiterb"></div>
+      </div>
+      <div class="saturn">
+        <div class="saturnb"></div>
+        <div class="saturnrings1"></div>
+        <div class="saturnrings2"></div>
+        <div class="saturnrings3"></div>
+        <div class="saturnrings4"></div>
+        <div class="saturnrings5"></div>
+        <div class="saturnrings6"></div>
+        <div class="saturnrings7"></div>
+
+      </div>
+      <div class="uranus">
+        <div class="uranusb"></div>
+      </div>
+      <div class="neptune">
+        <div class="neptuneb"></div>
       </div>
     </div>
   </body>
